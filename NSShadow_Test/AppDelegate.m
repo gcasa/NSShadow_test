@@ -39,6 +39,7 @@
     // Dibuixar l'ombra (Això dibuixa una "caixa" d'ombra al voltant de l'àrea del botó)
     NSBezierPath *shadowPath = [NSBezierPath bezierPathWithRect:shadowFrame];
     [[NSColor clearColor] set];
+    [shadowPath fill];
     
     [self.button setShadow: shadow];
 }
